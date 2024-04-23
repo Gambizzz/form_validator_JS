@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Form validator</title>
+</head>
+
+<body>
+  <h1>Inscription form</h1>
+  <form class="form">
+    <ul class="wrapper">
+      <li style="--i:9;"><input class="input" type="text" placeholder="Last name" required="" name="last" autocomplete="given-name"></li>
+      <li style="--i:8;"><input class="input" type="text" placeholder="First name" required="" name="first" autocomplete="family-name"></li>
+      <li style="--i:7;"><input class="input" type="text" placeholder="Age" required="" name="age"></li>
+      <li style="--i:6;"><input class="input" type="email" placeholder="Email" required="" name="email" autocomplete="email"></li>
+      <li style="--i:5;"><input class="input" type="email" placeholder="Email confirmation" required="" name="email2" autocomplete="email"></li>
+      <li style="--i:4;"><input class="input" type="password" placeholder="Password" required="" name="password" autocomplete="new-password"><span class="password-toggle" onclick="togglePassword('password')"><i class="fas fa-eye"></i></span></li>
+      <li style="--i:3;"><input class="input" type="password" placeholder="Password confirmation" required="" name="passwordConfirmation" autocomplete="new-password"><span class="password-toggle" onclick="togglePassword('passwordConfirmation')"><i class="fas fa-eye"></i></span></li>
+      <li style="--i:2;"><input type="checkbox" id="CGU" name="CGU" required="" checked>CGU</li>
+      <button type="submit" style="--i:1;">SUBMIT</button>
+    </ul>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
